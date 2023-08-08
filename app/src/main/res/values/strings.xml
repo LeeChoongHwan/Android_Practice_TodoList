@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Android_Inflearn_TodoList</string>
+    <string name="main_addtodo_btn">Todo 등록하기</string>
+    <string name="createTodo_title_tv">제목</string>
+    <string name="createTodo_todo_et">할 일을 입력하세요</string>
+    <string name="createTodo_importance_tv">중요도</string>
+    <string name="createTodo_low_radioButton">낮음</string>
+    <string name="createTodo_middle_radioButton">중간</string>
+    <string name="createTodo_high_radioButton">높음</string>
 </resources>

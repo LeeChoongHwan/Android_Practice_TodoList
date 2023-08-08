@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateTodoActivity">
+
+    <TextView
+        android:id="@+id/tv_createTodo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/createTodo_title_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/et_createTodo_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_createTodo_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_createTodo_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="30dp"
+        android:hint="@string/createTodo_todo_et"/>
+
+    <TextView
+        android:id="@+id/tv_createTodo_importance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/createTodo_importance_tv"
+        app:layout_constraintTop_toBottomOf="@+id/et_createTodo_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_createTodo_importance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_createTodo_importance"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_createTodo_importance">
+
+        <RadioButton
+            android:id="@+id/importance_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/createTodo_low_radioButton"/>
+
+        <RadioButton
+            android:id="@+id/importance_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/createTodo_middle_radioButton"/>
+
+        <RadioButton
+            android:id="@+id/importance_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/createTodo_high_radioButton"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_createTodo_addtodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/main_addtodo_btn"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
