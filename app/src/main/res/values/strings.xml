@@ -7,4 +7,9 @@
     <string name="createTodo_low_radioButton">낮음</string>
     <string name="createTodo_middle_radioButton">중간</string>
     <string name="createTodo_high_radioButton">높음</string>
+
+    <string name="alert_title">할 일 삭제</string>
+    <string name="alert_message">정말 삭제 하시겠습니까?</string>
+    <string name="alert_yes">네</string>
+    <string name="alert_no">취소</string>
 </resources>
